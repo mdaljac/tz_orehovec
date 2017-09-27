@@ -41,13 +41,27 @@ section:nth-of-type(odd):before, section:nth-of-type(odd):after{
 }
 section:nth-of-type(odd):before{
 	top: -60px;
-	transform: skewY(1deg);
+	transform: skewY(0.6deg);
+}
+section:first-child:before{
+	height: 0;
+	padding: 0;
+	top: 0;
+	transform: none;
 }
 section:nth-of-type(odd):after{
 	bottom: -60px;
-	transform: skewY(-1deg);
+	transform: skewY(-0.6deg);
 }
-
+section:nth-of-type(1){
+	margin-top: 0;
+}
+section:nth-of-type(1):before{
+	height: 0;
+	padding: 0;
+	top: 0;
+	transform: none;
+}
 
 .logo{
 	max-width: 80px;
